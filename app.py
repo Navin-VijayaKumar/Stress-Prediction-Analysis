@@ -40,7 +40,7 @@ try:
     X = df.drop(columns=["Student_ID", "Grades", "Grade_Category"])
     y = df["Grade_Category"]
 
-    # Scale features
+    # Scale features ...
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
 
